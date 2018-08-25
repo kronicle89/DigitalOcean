@@ -1,0 +1,11 @@
+{
+  "type": "A",
+  "name": "www.onkardevops.com",
+  "data": "178.128.175.95",
+  "priority": null,
+  "port": null,
+  "ttl": 1800,
+  "weight": null,
+  "flags": null,
+  "tag": null
+}

@@ -1,0 +1,11 @@
+{
+  "type": "CAA",
+  "name": "onkardevops.com",
+  "data": "letsencrypt.org",
+  "priority": null,
+  "port": null,
+  "ttl": 1800,
+  "weight": null,
+  "flags": null,
+  "tag": null
+}
