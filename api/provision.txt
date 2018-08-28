@@ -1,25 +1,26 @@
-export DO_TOKEN="c4a22aea4deaa6c681cc2479b43ca7bfd4a5654a83f0f615fe38014c1165c679"
+#Generate API Token from https://cloud.digitalocean.com/account/api 
+export DO_TOKEN="REPLACE_WITH_TOKEN"
 
-POST
-Create Droplet
+#POST
+#Create Droplet
 curl -X POST -H "Content-Type: application/json" -H "Authorization: Bearer $DO_TOKEN" -d @create-droplet.json "https://api.digitalocean.com/v2/droplets"
 
-Create Firewall
+#Create Firewall
 curl -X POST -H "Content-Type: application/json" -H "Authorization: Bearer $DO_TOKEN" -d @create-firewall.json "https://api.digitalocean.com/v2/firewalls"
 
-Create Domain
+#Create Domain
 curl -X POST -H "Content-Type: application/json" -H "Authorization: Bearer $DO_TOKEN" -d @create-domain.json "https://api.digitalocean.com/v2/domains"
 
-Create Domain Records
+#Create Domain Records
 curl -X POST -H "Content-Type: application/json" -H "Authorization: Bearer $DO_TOKEN" -d @create-domain-record-a1json "https://api.digitalocean.com/v2/domains/example.com/records"	
 curl -X POST -H "Content-Type: application/json" -H "Authorization: Bearer $DO_TOKEN" -d @create-domain-record-a2.json "https://api.digitalocean.com/v2/domains/example.com/records"
 curl -X POST -H "Content-Type: application/json" -H "Authorization: Bearer $DO_TOKEN" -d @create-domain-record-caa.json "https://api.digitalocean.com/v2/domains/example.com/records"
 
 
 
-GET
-List Droplets
+#GET
+#List Droplets
 curl -X GET -H "Content-Type: application/json" -H "Authorization: Bearer $DO_TOKEN" "https://api.digitalocean.com/v2/droplets?page=1&per_page=1"
 
-Retrieve an existing droplet by ID
+#Retrieve an existing droplet by ID
 curl -X GET -H "Content-Type: application/json" -H "Authorization: Bearer $DO_TOKEN" "https://api.digitalocean.com/v2/droplets/REPLACE_WITH_DROPLET_ID"

@@ -1,7 +1,7 @@
 {
   "type": "A",
-  "name": "www.onkardevops.com",
-  "data": "178.128.175.95",
+  "name": "www.domainname.com",
+  "data": "DROPLET_IP",
   "priority": null,
   "port": null,
   "ttl": 1800,

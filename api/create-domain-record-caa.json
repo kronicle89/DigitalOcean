@@ -1,6 +1,6 @@
 {
   "type": "CAA",
-  "name": "onkardevops.com",
+  "name": "domainname.com",
   "data": "letsencrypt.org",
   "priority": null,
   "port": null,
